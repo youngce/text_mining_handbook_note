@@ -1,2 +1,2 @@
-# Core Text Mining Operations
+# 2. Core Text Mining Operations
 
