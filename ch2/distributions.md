@@ -34,3 +34,9 @@ in K, that is,  $$f(D,K)=\frac{|D/k|}{|D|}$$. Given one concept k, rather than w
  use the notation $$f ( D, k)$$. When $$D$$ is clear from context, we drop it and write $$f ( k)$$.
  
 Thus, for example, $$f (W, \big\{ iran, nicaragua, reagan \big\})$$ is the fraction of documents in the World Affairs collection labeled with iran, nicaragua, and reagan; $$f (reagan)$$ is the proportion of the collection labeled with the concept reagan; and $$f (G8)$$ is the proportion labeled with any (G8) country.
+
+
+### Conditional Concept Proportion
+If *D* is a collection of documents and *K1* and *K2* are sets of concepts, $$f(D,K1 | K2)$$ is the proportion of all those documents in *D* labeled with *K2* that are also labeled with *K1* , that is, $$f ( D, K1 | K2 ) =
+f (D/K2, K1)$$. When *D* is clear from context, we will write this as $$f (K1 | K2)$$.
+Applying this definition, we find that $$f (reagan | iran)$$ would represent the proportion of all documents labeled by the concept iran that are also labeled by the concept *reagan*.
