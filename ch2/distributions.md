@@ -6,8 +6,10 @@
 | *D/K* | the subset of documents in *D* labeled with all of the concepts in *K* |
 | *k* | a single concept |
 | *D/k* | it is clear from the context, given a single concept k |
-| 0:7 | 1:7 |
-| 0:8 | 1:8 |
+| $$f(D,K1 | K2)$$ |the proportion of all those documents in *D* labeled with *K2* that are also labeled with *K1* , that is, $$f ( D, K1 | K2 ) =
+f (D/K2, K1)$$|
+|  $$P_K(x)$$| distributions – it will assign to any concept *x* in *K* a value between 0 and 1 – where the values are not required to add up to 1. |
+| $$F_K(D, x)$$ | the proportion of documents in *D* labeled with *x* for any *x* in *K*. When *D* is clear from context, we will write this as $$F_K( x)$$. |
 | 0:9 | 1:9 |
 | 0:10 | 1:10 |
 
@@ -36,7 +38,12 @@ in K, that is,  $$f(D,K)=\frac{|D/k|}{|D|}$$. Given one concept k, rather than w
 Thus, for example, $$f (W, \big\{ iran, nicaragua, reagan \big\})$$ is the fraction of documents in the World Affairs collection labeled with iran, nicaragua, and reagan; $$f (reagan)$$ is the proportion of the collection labeled with the concept reagan; and $$f (G8)$$ is the proportion labeled with any (G8) country.
 
 
-### Conditional Concept Proportion
+### Conditional Concept Proportion－$$f(D,K1 | K2)$$
 If *D* is a collection of documents and *K1* and *K2* are sets of concepts, $$f(D,K1 | K2)$$ is the proportion of all those documents in *D* labeled with *K2* that are also labeled with *K1* , that is, $$f ( D, K1 | K2 ) =
 f (D/K2, K1)$$. When *D* is clear from context, we will write this as $$f (K1 | K2)$$.
 Applying this definition, we find that $$f (reagan | iran)$$ would represent the proportion of all documents labeled by the concept iran that are also labeled by the concept *reagan*.
+
+
+### Concept Proportion Distribution－$$F_K(D, x)$$
+Note the distinction between PK(x) and FK(x). PK(x) refers generically to any func- tion that is a concept distribution. FK(x) is a specific concept distribution defined by a particular concept-labeled set of documents.
+
