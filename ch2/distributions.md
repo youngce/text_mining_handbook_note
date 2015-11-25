@@ -6,7 +6,7 @@
 | *D/K* | the subset of documents in *D* labeled with all of the concepts in *K* |
 | *k* | a single concept |
 | *D/k* | it is clear from the context, given a single concept k |
-| $$f$$ | the proportion of all those documents in *D* labeled with *K2* that are also labeled with *K1* , that is, $$f ( D, K1 | K2 ) =
+| $f(D,K1|K2)$ | the proportion of all those documents in *D* labeled with *K2* that are also labeled with *K1* , that is, $$f ( D, K1 | K2 ) =
 f (D/K2, K1)$$|
 |  $$P_K(x)$$| distributions – it will assign to any concept *x* in *K* a value between 0 and 1 – where the values are not required to add up to 1. |
 | $$F_K(D, x)$$ | the proportion of documents in *D* labeled with *x* for any *x* in *K*. When *D* is clear from context, we will write this as $$F_K( x)$$. |
